@@ -1,4 +1,4 @@
 FROM python:latest
 COPY ./main.py .
-CMD chmod +x ./main.py 
+RUN chmod +x ./main.py 
 ENTRYPOINT ["./main.py"]
