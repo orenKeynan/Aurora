@@ -1,2 +1,2 @@
-print("Devops is great")
-#test
+import logging
+logging.INFO("Devops is great")
