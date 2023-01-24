@@ -2,4 +2,8 @@
 
 ## How to run Jenkins:
 docker build -t jenkins-dc - < jenkins.Dockerfile
-docker run -d -p 8080:8080 -v jenkins_home:/var/jenkins_home jenkins-dc-7
+docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home jenkins-dc
+
+## Plugins of jenkins
+Docker
+
